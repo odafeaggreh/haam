@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Core Styles */
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    padding: 1em;
+}
+
+p{
+    margin: 0;
+    padding: 1em;
+}
+
+/* Header Styles */
+
+/* Top Nav Styles */
+
+.top-nav{
+    background-color: #292929;
+    color: #fff;
+    font-size: 1em;
+}
+
+.container-topNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.welcome-note{
+    margin: 20px;
+    padding: auto;
+    word-spacing: 1px;
+}
+
+.welcome-note span{
+    color: #ffaf02;
+}
+
+div.login-signup{
+    width: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+div.login-signup p{
+    padding: 0;
+}
+
+.login-signup a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Nav Styles */
+
+.main-nav{
+    background-color: transparent;
+    
+    font-size: 1.1em;
+
+}
+
+.main-nav .container-mainNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.navigation{
+    width: 50%;
+}
+
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li{
+    list-style-type: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* Main Area */
+
+/* Banner Image */
+
+#main{
+    width: 100%;
+    height: auto;
+}
+
+ #section-1{
+     display: grid;
+     grid-template-areas: 
+                        "a b"
+                        "c c";
+     justify-content: space-evenly;
+     align-items: center;
+    background: linear-gradient(to right, #0d104d, #28408b);
+    width: 100%;
+    height: 600px;
+}
+
+.banner-img-wrappr{
+    grid-area: a;
+}
+
+.banner-img{
+    background: url('./Assets/bg-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    width: 500px;
+    height: 400px;
+    padding: 50px;
+}
+
+.content-area{
+    grid-area: b;
+    flex: 2;
+    padding: 1em;
+}
+
+.content-area .content-title h3{
+    font-size: 4em;
+    color: #fff;
+    padding: 1em;
+}
+
+.content-area .content-title h3 span{
+    color: #ffaf02;
+}
+
+.content-text p{
+    font-size: 1em;
+    color: #fff;
+    padding: 0 4em;
+    box-sizing: border-box;
+}
+
+.read-moreBtn{
+    grid-area: c;
+}
+
+.read-btn{
+    color: #000;
+    text-transform: uppercase;
+    margin: 50px 170px;
+    padding: 20px;
+    background-color: antiquewhite;
+    width: 150px;
+    border-bottom: 4px solid #ffaf02;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+}
+
+.read-btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Section 2 */
+
+#section-2{
+    background-color: transparent;
+}
+
+#section-2 h4{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 1em;
+}
+
+#section-2 p{
+    text-align: center;
+    color: #333;
+    font-size: 1em;
+    padding: 0 10em;
+    margin: 1em;
+}
+
+/* Section 3 */
+
+/* cards */
+
+#section-3{
+    display: grid;
+    grid-template-areas: 
+                "X X X X"
+                "A B C D"
+    ;
+    grid-column-gap: 1em;
+    margin: 2em;
+    height: auto;
+
+
+}
+
+.card{
+    background-color: #eef3f6;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.card-text{
+    color: #8e8e8e;
+}
+
+.card:hover{
+    color: #fff;
+    background-color: #ffaf02;
+    transition: ease-in 0.3s;
+}
+
+.card-title:hover{
+    color: #fff;
+}
+
+.card-text:hover{
+    color: #fff;
+}
+
+.card-read-btn{
+    display: inline-block;
+  background-color: #fff;  
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  padding: 1em;
+  margin: 1.5em 1em;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #000;
+  border-bottom: 3px solid #ffaf02;
+}
+
+.card-read-btn:hover{
+    background-color: #333;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+
+.card-title{
+    grid-area: X;
+}
+
+.card-a{
+    grid-area: A;
+}
+
+.card-b{
+    grid-area: B;
+}
+
+.card-c{
+    grid-area: C;
+}
+
+.card-d{
+    grid-area: D;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 1em;
+    text-transform: capitalize;
+    line-height: 1.7em;
+}
+
+
+/* Section 4 */
+
+#section-4{
+    background-color: transparent;
+    display: grid;
+    grid-template-areas: 
+                    "a b";
+}
+
+.section-img img{
+    grid-area: a;
+    background-color: transparent;
+    width: 500px;
+    height: auto;
+}
+
+.section-text{
+    grid-area: b;
+    padding: 0.8em 2em;
+}
+
+.section-title h4{
+    font-size: 1.8em;
+    font-weight: 100;
+}
+
+.section-title span{
+    font-weight: 900;
+}
+
+
+/* Footer */
+
+.main-footer{
+    background-color: #000;
+    height: 500px;
+}
+
+.footer-img{
+    background: #000 url('./Assets/banner-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.1;
+    
+}
+
+.info{
+    display: grid;
+    grid-template-areas: "x y z";
+    width: 100%;
+    grid-column-gap: 0;
+}
+
+
+.mission-statment{
+    grid-area: x;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.content-head{
+    color: #fff;
+}
+
+.text{
+    color: #8e8e8e;
+}
+
+.quick-links{
+    grid-area: y;
+    width: 33.3%;
+    color: #8e8e8e;
+}
+
+.quick-links ul{
+    list-style: none;
+
+}
+
+.contact-us{
+    color: #8e8e8e;
+    grid-area: z;
+    width: 33.3%;
+}
+
