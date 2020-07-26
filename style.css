@@ -29,6 +29,7 @@ p{
 
 /* Header Styles */
 
+
 /* Top Nav Styles */
 
 .top-nav{
@@ -46,6 +47,7 @@ p{
 }
 
 .welcome-note{
+    width: 50%;
     margin: 20px;
     padding: auto;
     word-spacing: 1px;
@@ -56,7 +58,7 @@ p{
 }
 
 div.login-signup{
-    width: 8%;
+    width: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -76,9 +78,7 @@ div.login-signup p{
 
 .main-nav{
     background-color: transparent;
-    
     font-size: 1.1em;
-
 }
 
 .main-nav .container-mainNav{
@@ -89,6 +89,8 @@ div.login-signup p{
 }
 
 .navigation{
+    display: flex;
+    flex-direction: row;
     width: 50%;
 }
 
@@ -126,7 +128,7 @@ div.login-signup p{
      align-items: center;
     background: linear-gradient(to right, #0d104d, #28408b);
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 
 .banner-img-wrappr{
@@ -145,7 +147,6 @@ div.login-signup p{
 
 .content-area{
     grid-area: b;
-    flex: 2;
     padding: 1em;
 }
 
@@ -160,7 +161,7 @@ div.login-signup p{
 }
 
 .content-text p{
-    font-size: 1em;
+    font-size: 1.5em;
     color: #fff;
     padding: 0 4em;
     box-sizing: border-box;
@@ -204,7 +205,7 @@ div.login-signup p{
 #section-2 p{
     text-align: center;
     color: #333;
-    font-size: 1em;
+    font-size: 1.3em;
     padding: 0 10em;
     margin: 1em;
 }
@@ -213,28 +214,32 @@ div.login-signup p{
 
 /* cards */
 
-#section-3{
+.card-containter{
     display: grid;
     grid-template-areas: 
                 "X X X X"
                 "A B C D"
     ;
     grid-column-gap: 1em;
-    margin: 2em;
+    width: 100%;
     height: auto;
 
 
 }
+
+
 
 .card{
     background-color: #eef3f6;
     border: 1px solid #ccc;
     border-radius: 7px;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    grid-column-gap: 10px;
 }
 
 .card-text{
     color: #8e8e8e;
+    font-size: 1.1em;
 }
 
 .card:hover{
@@ -300,6 +305,77 @@ div.login-signup p{
 }
 
 
+/* Packages */
+
+.plans{
+    margin: 90px 0;
+    display: block;
+    background-color: #fff;
+}
+
+.plans-section-title{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 2em;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.pln{
+    background-color: #eef3f6;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+
+.plans-title > h3{
+    text-align: center;
+    font-size: 1.9em;
+    margin: 10px;
+}
+
+.plans-info{
+    padding: 10px;
+    border-top: 1px solid black;
+    border-radius: 7px;
+    background-color: #ffaf02;
+}
+
+
+.plans-info > h4{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.plans-info > h6{
+    font-size: 1.1em;
+    text-align: center;
+}
+
+
+.plans-btn {
+    background-color: antiquewhite;
+    width: 110px;
+    margin: 40px auto;
+    padding: 20px;
+    border-bottom: 3px solid #333;
+    text-align: center;
+}
+
+
+.plans-btn > a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+}
+
+
 /* Section 4 */
 
 #section-4{
@@ -316,15 +392,18 @@ div.login-signup p{
     height: auto;
 }
 
-.section-text{
-    grid-area: b;
-    padding: 0.8em 2em;
-}
 
 .section-title h4{
     font-size: 1.8em;
     font-weight: 100;
 }
+
+.section-text{
+    grid-area: b;
+    padding: 0.8em 2em;
+    font-size: 1.4em;
+}
+
 
 .section-title span{
     font-weight: 900;
@@ -355,3 +434,300 @@ div.login-signup p{
 
 
 /* Mobile view */
+
+/* Lareg tablets */
+
+
+@media only screen and (max-width: 1050px) {
+    div.login-signup{
+        width: 15%;
+    }   
+
+     .login > a{
+        margin: 10px;
+    }
+
+    .read-btn{
+        margin: 0 150px 20px 150px;
+    }
+
+    .plans-container{
+        flex-direction: column;
+    }
+
+    .pln{
+        margin: 20px 0;
+    }
+
+
+}
+
+/* Medium Tablets */
+
+@media only screen and (max-width: 950px){
+    #section-1{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #section-3{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+/* Small tablet */
+
+@media only screen and (max-width: 750px){
+    .top-nav{
+        height: 100px;
+        padding: 1.5em;
+        text-align: center;
+    }
+
+    div.login-signup{
+        width: auto;
+    }
+
+    .main-nav .container-mainNav{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: column !important;
+        width: 70%;
+    }
+
+    .nav-links{
+        justify-content: space-between;
+    }
+
+    #section-1{
+        grid-template-areas: "b c"
+                             "a a";
+    }
+
+
+    .card-containter{
+       grid-template-areas: "X"
+                            "X"
+                            "X"
+                            "X"
+                            "A"
+                            "B"
+                            "C"
+                            "D"
+        ;
+        width: 100%;
+    }
+
+    .card{
+        width: 95%;
+        margin: 50px auto;
+    }
+
+    #section-4{
+        grid-template-areas: "a"
+                             "b";
+    }
+    
+
+    .section-img img{
+        width: 90%;
+    }
+
+}
+
+
+/* Large size phones */
+
+
+@media only screen and (max-width: 700px){
+    
+
+
+    .navigation{
+        width: 90%;
+    }
+
+    #section-1{
+        grid-template-areas: "b b"
+                             "c c"
+                             "a a";
+    }
+
+    .content-area .content-title h3{
+        text-align: start;
+        font-size: 2.5em;
+    }
+
+    .read-btn{
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .content-text p{
+        line-height: 1.5em;
+        font-size: 1.5em;
+        text-align: start;
+        width: 100%;
+        margin: 25px;
+        padding: 0;
+    }
+
+    #section-2 h4{
+        text-align: start;
+    }
+
+    #section-2 p{
+        padding: 7px;
+        text-align: start;
+        font-size: 1.2em;
+    }
+
+    .card-text p{
+        font-size: 1.5em;
+    }
+
+    .section-img img{
+        width: 100%;
+    }
+
+    .section-title{
+        padding: 0;
+    }
+
+    .section-text{
+        font-size: 1.1em;
+    }
+}
+
+
+/* Small phones */
+@media only screen and (max-width: 414px){
+    .navigation{
+        width: 100%;
+        padding: 1px;
+    }
+
+    div.login-signup{
+        width: 50%;
+    }
+
+    .content-area{
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .banner-img{
+        background-size: 300px;
+    }
+    
+    .content-area .content-title h3{
+        padding: 10px;
+        margin: 70px;
+    }
+
+
+    .content-text p{
+        max-width: 450px;
+        box-sizing: border-box;
+        margin: 50px;
+        padding: 20px;
+    }
+
+    .read-btn{
+        margin-left: 100px;
+    }
+
+    .main-footer{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .navigation{
+        width: 100%;
+        padding: 1px;
+    }
+
+    div.login-signup{
+        width: 50%;
+    }
+
+    .content-area{
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .banner-img{
+        background-size: 300px;
+    }
+    
+    .content-area .content-title h3{
+        padding: 10px;
+        margin: 70px;
+    }
+
+
+    .content-text p{
+        max-width: 450px;
+        box-sizing: border-box;
+        margin: 50px;
+        padding: 20px;
+    }
+
+    .read-btn{
+        margin-left: 100px;
+    }
+
+    .main-footer{
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    .navigation{
+        width: 100%;
+        padding: 1px;
+    }
+
+    div.login-signup{
+        width: 50%;
+    }
+
+    .content-area{
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .banner-img{
+        background-size: 300px;
+    }
+    
+    .content-area .content-title h3{
+        padding: 10px;
+        margin: 70px;
+    }
+
+
+    .content-text p{
+        max-width: 450px;
+        box-sizing: border-box;
+        margin: 50px;
+        padding: 20px;
+    }
+
+    .read-btn{
+        margin-left: 100px;
+    }
+
+    .main-footer{
+        flex-direction: column;
+    }
+}
