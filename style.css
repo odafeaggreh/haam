@@ -169,10 +169,10 @@ div.login-signup p{
 }
 
 .content-text p{
+    text-align: left;
     font-size: 1.5em;
     color: #fff;
-    padding: 0 4em;
-    box-sizing: border-box;
+    padding: 0 1em;
 }
 
 .read-moreBtn{
@@ -655,7 +655,35 @@ div.login-signup p{
     .main-footer{
         flex-direction: column;
     }
+
+
+
+    .content-text{
+        justify-content: center;
+        margin: 80px;
+        font-size: 1em;
+        width: 50%;
+    }
+
+    .content-text p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .read-btn{
+        width: auto;
+        margin-left: 173px;
+    }
+
+
+    
+    .main-footer{
+        flex-direction: column;
+    }
 }
+        
+
+
 
 @media only screen and (max-width: 360px){
     .navigation{
@@ -699,6 +727,7 @@ div.login-signup p{
 }
 
 
+
 @media only screen and (max-width: 375px){
     .navigation{
         width: 100%;
@@ -728,14 +757,44 @@ div.login-signup p{
         max-width: 450px;
         box-sizing: border-box;
         margin: 50px;
-        padding: 20px;
+        padding: 10px;
     }
 
     .read-btn{
-        margin-left: 100px;
+        margin-left: 200px;
+        padding: 10px;
     }
 
     .main-footer{
         flex-direction: column;
+    }
+}
+
+
+
+@media only screen and (max-width: 300px){
+    .navigation{
+        width: 100%;
+    }
+    
+
+    div.login-signup{
+        width: 50%;
+        font-size: 13px;
+    }
+
+    .content-area{
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .banner-img{
+        background-size: 300px;
+    }
+    
+    .content-area .content-title h3{
+        text-align: center;
+        margin-left: 70px;
+        font-size: 2em;
     }
 }
