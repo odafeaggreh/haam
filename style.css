@@ -74,6 +74,10 @@ div.login-signup p{
     color: #fff;
 }
 
+.login-signup a:hover{
+    color: #ffaf02;
+}
+
 /* Main Nav Styles */
 
 .main-nav{
@@ -107,6 +111,10 @@ div.login-signup p{
 .nav-links a{
     text-decoration: none;
     color: #333;
+}
+
+.nav-links a:hover{
+    color: #ffaf02;
 }
 
 
