@@ -117,6 +117,8 @@ div.login-signup p{
     color: #ffaf02;
 }
 
+/* HOME PAGE STYLES */
+
 
 /* Main Area */
 
@@ -797,4 +799,59 @@ div.login-signup p{
         margin-left: 70px;
         font-size: 2em;
     }
+}
+
+
+/* END OF HOME PAGE STYLES */
+
+
+/* PACKAGES STYLES */
+
+.packages-intro{
+    background: linear-gradient(to right, #0d104d, #28408b);
+    color: #fff;
+    height: 500px;
+}
+
+.package-section1-title h3{
+    line-height: 1.5em;
+    text-align: center;
+    margin: 40px 15px 10px 15px;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+
+.package-section1-text p{
+    text-align: center;
+    margin: 20px;
+    padding: 2em;
+    line-height: 1.5em;
+}
+
+
+.package-startBtn > a{
+    display: block;
+    background-color: antiquewhite;
+    width: 100px;
+    padding: 15px;
+    margin: 70px auto;
+    border-bottom: 3px solid #ffaf02;
+}
+
+
+.package-startBtn > a:hover{
+    background-color: #333;
+    border-bottom: 3px solid #fff;
+}
+
+
+.package-startBtn > a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+.package-startBtn > a:hover{
+    color: #fff;
 }
